@@ -1,0 +1,16 @@
+ejercicio24.sh
+ejercicio21.sh
+ejercicio23.sh
+ejercicio25.sh
+ejercicio22.sh
+ordenado.txt
+ejercicio20.sh
+ejercicio19.sh
+concatenado.txt
+actual.txt
+archivo2.txt
+archivo1.txt
+fecha.txt
+primos.txt
+ejercicio26.sh
+ordenados.txt
