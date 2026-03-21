@@ -1,0 +1,6 @@
+Este un ejemplo basico de grep
+El archivo tiene muchas lineas
+Mas de 3
+Menos de 10
+Relleno
+Fin
