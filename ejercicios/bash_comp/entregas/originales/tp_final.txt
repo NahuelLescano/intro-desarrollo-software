@@ -1,0 +1,2 @@
+Alumno: Garcia, Juan - Padrón: 104560
+La FUNCION recibe como PARAMETRO una lista de enteros.
