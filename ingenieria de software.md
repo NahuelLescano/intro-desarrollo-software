@@ -62,3 +62,33 @@ A partir de los requerimientos funcionales y no funcionales, se escoge la arquit
 
 3. **Implementación**
 
+Consiste en transformar los requerimientos en un producto funcional mediante la escritura de código.
+
+4. **Testing y Validación**
+
+- Objetivos:
+    * *Validación:* demostrar que el software cumple los requerimientos del cliente.
+    * *Verificación:* encontrar errores de funcionamiento.
+
+- Tipos de pruebas:
+    * *Pruebas unitarias:* verifican el correcto funcionamiento de componentes o funciones individuales del software.
+    * *Pruebas de integración:* evalúan la interacción entre varios módulos o componentes.
+    * *Pruebas de aceptación del usuarios (AUT):* realizadas por los usuarios finales para validar que el sistema cumple con sus expectativas.
+    * *Pruebas de usabilidad*: evalúan la experiencia del usuario, accesibilidad navegabilidad y faciilidad de uso del sistema.
+
+5. **Despliegue**
+
+El software pasa por diferentes entornos antes de llegar a producción:
+
+* *Development (desarrollo):* ambiente donde los programadores escriben y prueban su código de manera inicial.
+* *QA (aseguramiento de calidad):* entorno donde se realizan pruebas exhaustivas para detectar errores de liberar el sistema.
+* *Prepoducción / Staging:* replica el entorno de producción y se utiliza para poder realizar validaciones finales antes del lanzamiento.
+* *Producción:* entorno donde el software está disponible para los usuarios finales. Debe estar estable, seguro y supervisado.
+
+6. **Mantenimiento**
+
+Una vez desplegado, el software sigue evolucionando:
+
+* Surgen nuevos requerimientos.
+* Se descubren errores.
+* Cambia el negocio o el contexto.
