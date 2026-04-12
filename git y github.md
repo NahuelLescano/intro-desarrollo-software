@@ -1,5 +1,7 @@
 # Git y Github
 
+Antes de usar Github, ver este apunte: [Como configurar tu clave ssh](https://www.intro-camejo.com.ar/docs/Material/Apuntes/configurar-ssh-key)
+
 Git es un software muy importante a la hora de desarrollar, ya que nos permite controlar las versiones de los archivos de nuestro proyecto. Siendo una **versión** el estado del archivo después de realizar un conjunto de cambios. 
 
 Incluso nos permite trabajar con control de versiones de manera local, sin necesidad de estar conectado a un servidor remoto. Esto significa que podemos mantener un registro detallado y organizado de todo lo que ocurre en nuestros archivos, asegurando que cada cambio esté documentado y pueda ser recuperado en cualquier momento.
