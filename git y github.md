@@ -79,20 +79,24 @@ El archivo está en el área de staging, lo que significa que los cambios han si
 ## Comandos básicos de Git por tema
 
 1. *Configuración Inicial*
+
 * `git config --global user.name "Tu Nombre"`: Configura tu nombre de usuario de manera global.
 * `git config --global user.email "tu.email@dominio.com"`: Configura tu correo electrónico globalmente.
 * `git config --list`: Muestra la configuración actual.
 
 2. *Inicialización de Repositorio*
+
 * `git init`: Inicializa un nuevo repositorio Git en el directorio actual.
 
 3. *Rastrear Archivos*
+
 * `git add <archivo>`: Añade un archivo al staging area.
 * `git add .`: Añade todos los archivos al staging area.
 * `git status`: Muestra el estado de los archivos en el repositorio (rastreado, modificados, en staging, etc.).
 * `git rm --cached <archivo>`: Elimina un archivo del área de staging sin eliminarlo del directorio de trabajo.
 
 4. *Stash (Guardar Cambios Temporales)*
+
 * `git stash`: Guarda los cambios no confirmados temporalmente.
 * `git stash -u`: Guarda los cambios no confirmados y archivos no rastreados.
 * `git stash list`: Muestra la lista de stashes guardados.
@@ -101,5 +105,55 @@ El archivo está en el área de staging, lo que significa que los cambios han si
 * `git stash drop`: Elimina el último stash guardado.
 * `git stash clear`: Elimina todos los stashes guardados.
 
+5. *Confirmación de Cambios (Commits)*
 
+* `git commit -m "<mensaje>"`: Guarda los cambios en el repositorio con un mensaje descriptivo.
+* `git commit --amend`: Modifica el último commit realizado.
 
+6. *Historial*
+
+* `git log`: Muestra el historial de commits.
+* `git log --oneline`: Muestra el historial de commits en una sola línea por commit.
+
+7. *Sincronización con Repositorios Remotos*
+
+* `git remote add origin <url>`: Asocia el repositorio local con uno remoto.
+* `git push origin <nombre-rama>`: Sube los cambios locales en la rama actual al repositorio remoto.
+* `git pull origin <nombre-rama>`: Trae los cambios de una rama remota al local y los fusiona.
+
+8. *Ramas (Branches)*
+
+* `git branch`: Muestra las ramas actuales.
+* `git branch <nombre-rama>`: Crea una nueva rama.
+* `git checkout <nombre-rama>`: Cambia a una rama diferente.
+* `git checkout -b <nombre-rama>`: Crea y cambia a una nueva rama.
+* `git merge <nombre-rama>`: Fusiona la rama especificada con la rama actual. (Por ejemplo, el main con la branch actual)
+* `git branch --set-upstream-to=origin/<rama>`: Establece la rama remota de seguimiento para la rama actual.
+
+9. *Restaurar Cambios (Restore)*
+
+* `git restore <archivo>`: Deshace los cambios locales no confirmados en el archivo, restaurándolo a la versión del último commit.
+* `git restore --staged <archivo>`: Quita un archivo del área de preparación sin perder los cambios locales.
+* `git restore --source=<commit> <archivo>`: Restaura un archivo a su estado en un commit específico.
+* `git restore .`: Deshace los cambios no confirmados en todos los archivos del directorio actual.
+
+10. *Deshacer Cambios*
+
+* `git reset <archivo>`: Elimina un archivo del área de preparación.
+* `git reset --hard`: Revierte el repositorio al último commit, descartando todos los cambios.
+* `git checkout -- <archivo>`: Deshace los cambios en un archivo que aún no ha sido añadido al área de preparación.
+
+11. *Clonación*
+
+* `git clone <url>`: Clona un repositorio remoto en el directorio local.
+
+12. *Etiquetas (Tags)*
+
+* `git tag <nombre-etiqueta>`: Crea una nueva etiqueta.
+* `git tag`: Muestra todas las etiquetas.
+* `git push origin <nombre-etiqueta>`: Sube una etiqueta al repositorio remoto.
+
+13. *Ver Cambios*
+
+* `git diff`: Muestra las diferencias entre los archivos modificados pero no preparados para commit.
+* `git diff --staged`: Muestra las diferencias entre los archivos preparados para commit y el último commit.
