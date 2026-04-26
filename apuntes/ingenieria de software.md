@@ -30,7 +30,7 @@ Actualmente, la ingeniería de software se concibe como un proceso **iterativo e
     * Sistemas críticos deben ser robustos y tolerantes a fallos.
     * Se requieren sistemas que puedan ser mantenidos y escalados con facilidad.
 
-## Etapas de la Ingeniería de Software
+# Etapas de la Ingeniería de Software
 
 1. **Análisis de Requerimientos**
 

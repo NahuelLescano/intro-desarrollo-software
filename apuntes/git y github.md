@@ -27,7 +27,7 @@ Un **commit** en Git es una instantánea del estado de los archivos en tu reposi
 
 Es muy importante que el mensaje que esté dentro del commit sea **descriptivo, claro y útil,** ya que esto ayudará a que todo aquel que participe del proyecto comprenda claramente cuál fue el cambio realizado en los archivos del mismo. 
 
-## Colaborando en repositorios remotos
+# Colaborando en repositorios remotos
 
 ### Issues
 
@@ -78,7 +78,7 @@ El archivo está en el área de staging, lo que significa que los cambios han si
 * De **Staged** a **Unstaged**:
 `git reset` para retirar archivos del área de staging, devolviéndolos al estado de modificados.
 
-## Comandos básicos de Git por tema
+# Comandos básicos de Git
 
 1. *Configuración Inicial*
 

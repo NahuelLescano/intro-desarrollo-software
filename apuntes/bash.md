@@ -28,9 +28,9 @@ La comunicacion entre los procesos se maneja a traves de tres flujos estandar: `
 
 * **stderr:** flujo a traves del cual los comandos envian mensajes de error. Por defecto, `stderr` tambien es la salida a la termianl, pero se pueden redirigir los mensajes a otro archivo.
 
-## Caracteristicas avanzadas del interprete de comandos.
+# Caracteristicas avanzadas del interprete de comandos.
 
-### Expansiones de terminal
+## Expansiones de terminal
 
 Las expansiones son una caracteristica muy util que permite cambiar algo que escribis por otra cosa antes de ejecutar el comando. Aunque dicha expansion cambia el comando, este reemplazo no se muestra en la terminal de forma explicita.
 
@@ -83,7 +83,7 @@ echo \$nombre
 * **Operaciones aritmeticas:** bash permite realizar operaciones aritmeticas dentro de `(( ))`.
 
 
-## Redireccion y pipelines
+# Redireccion y pipelines
 
 En bash, las redirecciones y los pipelines son herramientas esenciales que te permiten controlar y manipular el flujo de datos entre comandos y archivos.
 

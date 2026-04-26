@@ -27,7 +27,7 @@ Docker se ha convertido en una herramienta fundamental para el desarrollo modern
 
 Una *imagen* es la definición estática (template) de lo que contendrá el contenedor, mientras que un *contenedor* es una instancia en ejecución de esa imagen.
 
-## Docker Compose
+# Docker Compose
 
 Docker Compose es una herramienta que permite definir, configurar y ejectuar múltiples contenedores Docker como una única aplicación. Es ideal para entornos donde se requiere una arquitectura basada en varios servicios interconectados.
 
@@ -68,14 +68,14 @@ También es posible definir:
 * Dependencias entre servicios (`depends_on:`)
 * Configuraciones especificas por entorno (`env_file:`)
 
-## Docker avanzado
+# Docker avanzado
 
-### Volúmenes y Bind Mounts
+## Volúmenes y Bind Mounts
 
 * **Volúmenes**: gestionados por Docker, ideales para persistencia.
 * **Bind Mounts**: enlazan carpetas del host con el contenedor. Útiles en desarrollo.
 
-### Redes personalizadas
+## Redes personalizadas
 
 * Docker permite crear redes virtuales entre contenedores.
 * Se puede definir una red propia en Compose y conectar servicios.
@@ -86,7 +86,7 @@ networks:
         driver: bridge
 ```
 
-### Variables de entorno y `.env`
+## Variables de entorno y `.env`
 
 * Docker Compose permite definir variables de entorno directamente en el archivo `docker-compose.yml` o en un archivo externo `.env`.
 
