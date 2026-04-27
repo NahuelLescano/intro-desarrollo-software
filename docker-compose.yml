@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: sql_ejercicios_db
+    environment:
+      POSTGRES_USER: ejercicios
+      POSTGRES_PASSWORD: ejercicios
+      POSTGRES_DB: ejercicios
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./ejercicios/Guia3:/docker-entrypoint-initdb.d:ro
+
+volumes:
+  pgdata:
