@@ -10,5 +10,6 @@ if [ ! -f "$1" ]; then
   exit 1
 fi
 
-echo "Ejecutando el archivo SQL: $1"
+echo "Ejecutando: $1"
+echo ""
 docker exec -i sql_ejercicios_db psql -U ejercicios -d ejercicios < "$1"
