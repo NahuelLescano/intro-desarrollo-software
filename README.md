@@ -9,5 +9,84 @@ Los apuntes estan todos hechos en markdown y luego los convierto a PDF usando `p
 ./generate_pdf.sh <apunte>
 ```
 
-[Intro pagina principal](https://www.intro-camejo.com.ar/)
+## Ejercicios de SQL
+
+Para correr las queries, primero tenes que levantar el contenedor. Podes hacerlo a traves de `docker compose` o `make`
+
+Para levantar el contenedor, usa:
+
+```bash
+docker compose up -d
+```
+o
+
+```bash
+make
+```
+Por defecto hace `make up`
+
+Para ver los contenedores corriendo en el momento
+
+```bash
+docker compose ps
+```
+
+o
+
+```bash
+make ps
+```
+
+Ver los logs del momento
+
+```bash
+docker compose logs -f
+```
+
+o
+
+```bash
+make logs
+```
+
+Para remover el contenedor, usa:
+
+```bash
+docker compose down
+```
+
+o
+
+```bash
+make down
+```
+
+O, si queres borrar el volumen, podes hacer:
+
+```bash
+docker compose down -v
+```
+
+o
+
+```bash
+make delete
+```
+
+Si por alguna razon la base de datos no funciona del todo bien, podes resetearlo corriendo ambos comandos al mismo tiempo:
+
+```bash
+docker compose down -v
+docker compose up -d
+```
+
+o
+
+```bash
+make reset
+```
+
+### Pagina de la catedra
+
+Pagina oficial de la materia: [Intro pagina principal](https://www.intro-camejo.com.ar/)
 
