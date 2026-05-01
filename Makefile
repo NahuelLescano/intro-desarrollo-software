@@ -12,6 +12,9 @@ logs:
 ps:
 	docker compose ps
 
+delete:
+	docker compose down -v
+
 reset:
 	docker compose down -v
 	docker compose up -d
